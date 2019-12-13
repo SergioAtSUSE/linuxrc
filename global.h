@@ -737,7 +737,7 @@ typedef struct {
 
 } config_t;
 
-extern config_t config;
+config_t config;
 
 extern int             max_x_ig;
 extern int             max_y_ig;
