@@ -3,7 +3,7 @@ CFLAGS	= -c -g -O2 -Wall -Wno-pointer-sign
  CFLAGS += -fmessage-length=0 -grecord-gcc-switches -D_FORTIFY_SOURCE=2 -fstack-protector-strong \
           -funwind-tables -fasynchronous-unwind-tables -fstack-clash-protection
 #          -fsanitize=address -fsanitize-recover=all
-LDFLAGS	= -lasan -rdynamic -lhd -lblkid -lcurl -lreadline -lmediacheck
+LDFLAGS	= -rdynamic -lhd -lblkid -lcurl -lreadline -lmediacheck
 ARCH	= $(shell /usr/bin/uname -m)
 ifeq ($(ARCH),s390x)
 LDFLAGS	+= -lqc
